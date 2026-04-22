@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (isValid) {
         // Build WhatsApp message
         const message = `Halo LPK Namdong! Saya ingin mendaftar.%0A%0ANama: ${name.value}%0AUsia: ${age.value}%0APendidikan: ${education.value}%0ANo. HP: ${phone.value}%0AProgram: ${program.value}`;
-        const waUrl = `https://wa.me/6281234567890?text=${message}`;
+        const waUrl = `https://wa.me/6287723648549?text=${message}`;
         window.open(waUrl, '_blank');
       }
     });
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = contactForm.querySelector('#contactName').value;
       const msg = contactForm.querySelector('#contactMessage').value;
       const message = `Halo LPK Namdong!%0A%0ANama: ${name}%0APesan: ${msg}`;
-      const waUrl = `https://wa.me/6281234567890?text=${message}`;
+      const waUrl = `https://wa.me/6287723648549?text=${message}`;
       window.open(waUrl, '_blank');
     });
   }
