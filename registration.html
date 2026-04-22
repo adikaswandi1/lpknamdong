@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Formulir pendaftaran program pelatihan bahasa Korea di LPK Namdong. Daftar sekarang untuk memulai karir di Korea Selatan.">
+    <title>Pendaftaran - LPK Namdong</title>
+    <link rel="icon" href="logo/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">ND</div><span class="nav-logo-text">LPK Namdong</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Beranda</a>
+                <a href="about.html">Tentang</a>
+                <a href="programs.html">Program</a>
+                <a href="work-in-korea.html">Kerja di Korea</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Kontak</a>
+                <a href="registration.html" class="nav-cta active">Daftar Sekarang</a>
+            </div>
+            <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb"><a href="index.html">Beranda</a> / <span>Pendaftaran</span></div>
+            <h1>Formulir <span>Pendaftaran</span></h1>
+            <p>Isi formulir di bawah ini untuk mendaftar program pelatihan di LPK Namdong.</p>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section>
+        <div class="container">
+            <div class="why-grid" style="align-items:flex-start;">
+                <!-- Form -->
+                <div class="animate-on-scroll" style="flex:1.2;">
+                    <div class="card" style="padding:40px;">
+                        <h3 style="margin-bottom:8px;"><i class="fas fa-user-plus" style="color:var(--accent);"></i>
+                            Form Pendaftaran</h3>
+                        <p style="color:var(--text-light); margin-bottom:28px;">Lengkapi data diri Anda. Setelah submit,
+                            Anda akan diarahkan ke WhatsApp untuk konfirmasi.</p>
+                        <form id="registrationForm">
+                            <div class="form-group">
+                                <label class="form-label" for="regName">Nama Lengkap *</label>
+                                <input type="text" class="form-input" id="regName" placeholder="Masukkan nama lengkap">
+                                <div class="form-error">Nama lengkap wajib diisi</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="regAge">Usia *</label>
+                                <input type="number" class="form-input" id="regAge" placeholder="Masukkan usia (18-45)"
+                                    min="18" max="45">
+                                <div class="form-error">Usia harus antara 18-45 tahun</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="regEducation">Pendidikan Terakhir *</label>
+                                <select class="form-select" id="regEducation">
+                                    <option value="">Pilih pendidikan</option>
+                                    <option value="SMP">SMP / Sederajat</option>
+                                    <option value="SMA/SMK">SMA / SMK / Sederajat</option>
+                                    <option value="D3">Diploma (D3)</option>
+                                    <option value="S1">Sarjana (S1)</option>
+                                    <option value="S2">Magister (S2)</option>
+                                </select>
+                                <div class="form-error">Pilih pendidikan terakhir</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="regPhone">Nomor HP / WhatsApp *</label>
+                                <input type="tel" class="form-input" id="regPhone" placeholder="Contoh: 081234567890">
+                                <div class="form-error">Nomor HP minimal 10 digit</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="regProgram">Program yang Diminati *</label>
+                                <select class="form-select" id="regProgram">
+                                    <option value="">Pilih program</option>
+                                    <option value="EPS-TOPIK">Persiapan EPS-TOPIK (3 Bulan)</option>
+                                    <option value="Bahasa Korea Dasar">Bahasa Korea Dasar (2 Bulan)</option>
+                                    <option value="Kelas Online">Kelas Online (1 Bulan)</option>
+                                </select>
+                                <div class="form-error">Pilih program yang diminati</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="regMessage">Pesan (Opsional)</label>
+                                <textarea class="form-input" id="regMessage" rows="3"
+                                    placeholder="Tulis pesan atau pertanyaan Anda"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-accent btn-lg" style="width:100%;"><i
+                                    class="fab fa-whatsapp"></i> Kirim via WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="animate-on-scroll animate-delay-1" style="flex:0.8;">
+                    <div class="card" style="margin-bottom:24px;">
+                        <h4 style="margin-bottom:16px;"><i class="fas fa-info-circle" style="color:var(--accent);"></i>
+                            Informasi Pendaftaran</h4>
+                        <ul style="list-style:none; padding:0; color:var(--text-light); line-height:2;">
+                            <li><i class="fas fa-check" style="color:var(--accent); margin-right:8px;"></i> Pendaftaran
+                                dibuka sepanjang tahun</li>
+                            <li><i class="fas fa-check" style="color:var(--accent); margin-right:8px;"></i> Kelas
+                                dimulai setiap bulan</li>
+                            <li><i class="fas fa-check" style="color:var(--accent); margin-right:8px;"></i> Pembayaran
+                                bisa dicicil</li>
+                            <li><i class="fas fa-check" style="color:var(--accent); margin-right:8px;"></i> Gratis
+                                konsultasi awal</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="margin-bottom:24px;">
+                        <h4 style="margin-bottom:16px;"><i class="fas fa-phone-alt" style="color:var(--accent);"></i>
+                            Hubungi Kami</h4>
+                        <div class="footer-contact-item" style="margin-bottom:12px;"><i class="fas fa-phone"
+                                style="color:var(--accent);"></i><span>+62 812-3456-7890</span></div>
+                        <div class="footer-contact-item" style="margin-bottom:12px;"><i class="fas fa-envelope"
+                                style="color:var(--accent);"></i><span>info@lpknamdong.com</span></div>
+                        <div class="footer-contact-item"><i class="fas fa-clock"
+                                style="color:var(--accent);"></i><span>Senin - Sabtu, 08:00 - 17:00</span></div>
+                    </div>
+                    <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-whatsapp btn-lg"
+                        style="width:100%;"><i class="fab fa-whatsapp"></i> Chat via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <div class="nav-logo-icon">ND</div><span class="nav-logo-text" style="color:var(--white);">LPK
+                            Namdong</span>
+                    </a>
+                    <p>Lembaga Pelatihan Kerja yang mempersiapkan tenaga kerja Indonesia untuk bekerja di Korea Selatan.
+                    </p>
+                    <div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i
+                                class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a
+                            href="#"><i class="fab fa-tiktok"></i></a></div>
+                </div>
+                <div>
+                    <h4>Menu</h4>
+                    <div class="footer-links"><a href="index.html">Beranda</a><a href="about.html">Tentang Kami</a><a
+                            href="programs.html">Program</a><a href="work-in-korea.html">Kerja di Korea</a><a
+                            href="blog.html">Blog</a><a href="contact.html">Kontak</a></div>
+                </div>
+                <div>
+                    <h4>Program</h4>
+                    <div class="footer-links"><a href="programs.html">EPS-TOPIK</a><a href="programs.html">Bahasa Korea
+                            Dasar</a><a href="programs.html">Kelas Online</a><a href="registration.html">Pendaftaran</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Kontak</h4>
+                    <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Jl. Contoh Alamat No.
+                            123, Kota, Provinsi</span></div>
+                    <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+62 812-3456-7890</span></div>
+                    <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@lpknamdong.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2026 LPK Namdong. All rights reserved.</div>
+        </div>
+    </footer>
+    <a href="https://wa.me/6281234567890" target="_blank" class="wa-float"><i class="fab fa-whatsapp"></i></a>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
