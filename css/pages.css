@@ -1161,7 +1161,15 @@
     gap: 20px;
   }
 
+  .hero {
+    padding-top: 120px;
+  }
+
   .stats-bar .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-stats {
     grid-template-columns: repeat(2, 1fr);
   }
 
